@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/geometry-1023846_960_720.jpg) rgba(0, 0, 0, 0.51);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.677);
+}
+.caculator {
+    position: absolute;
+    background-color: aliceblue;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+.caculator-show {
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    padding: 5rem;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.handle-cacul {
+    display: flex;
+    position: absolute;
+    overflow: hidden; 
+    bottom: 20%;
+    right: 20%;
+    margin-top: 2rem;
+}
+.handle-cacul p {
+    margin: 0 0.3rem;
+    color: rgb(118, 21, 211);
+    font-size: 1.2rem;
+}
+.result {
+    position: absolute;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    top: 20%;
+    overflow: hidden;
+}
+.result p {
+    color: rgb(118, 21, 211);
+    font-size: 4rem;
+}
+.result span {
+    color: rgb(118, 21, 211);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.caculator-fc {
+    display: grid;
+    margin: 3rem 5rem;
+    gap: 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(255, 255, 255);
+}
+.caculator-fc_item {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    background-color: white;
+    cursor: pointer;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.429);
+    transition: all linear;
+}
+.caculator-fc_item:hover {
+    background-color: rgb(240, 240, 240);
+}
+.caculator-fc_item:focus {
+    animation: arrow 1s ease-in;
+}
+@keyframes arrow {
+    from {
+        transform: 0;
+    }
+    to {
+        transform: translate(0.1rem, 0.1rem);
+    }
+}
+.active {
+    background-color: blueviolet;
+}
