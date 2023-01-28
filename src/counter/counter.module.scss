@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(146, 222, 209);
+}
+.counter-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    border: 2px solid rgb(5, 34, 96);
+    background-color: rgb(73, 65, 123);
+}
+
+.counter-content {
+    border: 3px solid white;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 14rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.hot {
+    background-color: rgb(248, 130, 33);
+}
+.cold {
+    background-color: rgb(15, 20, 168);
+}
+.temperatureValue {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 0.4rem;
+}
+.degred {
+    font-size: 2rem;
+}
+.Incre-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgb(144, 34, 223);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin: 0 1rem;
+    border: none;
+    transition: all linear;
+}
+.Decre-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgb(144, 34, 223);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all linear;
+}
+
+.Decre-btn:hover,
+.Incre-btn:hover {
+    transform: scale(1.2);
+}
